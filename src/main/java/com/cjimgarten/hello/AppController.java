@@ -49,11 +49,6 @@ public class AppController {
 
         LOGGER.info("Processing path variable");
         String greeting = "Hello " + name;
-
-        if (name.equals("")) {
-            greeting = "Greetings";
-        }
-
         LOGGER.info(greeting);
         model.addAttribute("greeting", greeting);
         model.addAttribute("title", title);
